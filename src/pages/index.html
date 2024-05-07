@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+        "title": "Главная"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main>
+        @@include('html/card/card.html', {
+            "image": "/images/main/flower1.png",
+            "price": "1600 ₽",
+            "description": "Минибукет 1600-6",
+            "sale": true,
+            "newprice":"1400 ₽",
+            "new": true
+        })
+    </main>
+
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+</html>

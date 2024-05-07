@@ -1,0 +1,16 @@
+.card {
+    width: 320px;
+    height: 409px;
+    .image-holder {
+        padding: 15px;
+        .image {
+            position: relative;
+            .heart {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    
+}
