@@ -1,3 +1,25 @@
 main {
-  
+  min-height: 2000px;
+  .seasonal {
+    margin-top: 60px;
+    .seasonal-text {
+        display: flex;
+        justify-content: center;
+        font-family: 'Cormorant Garamond';
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .seasonal-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 75px;
+        .card-element {
+            height: 409px;
+            &:hover {
+                z-index: 2;
+            }
+        }
+    }
+  }
 }

@@ -81,9 +81,20 @@ button,
 input {
   overflow: visible;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* WebKit browsers */
+  margin: 0; /* Remove default margins */
+}
 button,
 select {
   text-transform: none;
+}
+button {
+  cursor: pointer;
+}
+input {
+  cursor: text;
 }
 button,
 [type="button"],

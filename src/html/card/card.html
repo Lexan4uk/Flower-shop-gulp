@@ -1,18 +1,56 @@
-<div class="card">
-    <div class="image-holder">
-        <div class="image">
-            <img src="@@image" alt="">
-            <img class="heart" src="/images/card/heart.svg" alt="">
-            @@if (sale === true) {
-                @@include('html/card/new.html')
-            }
+<div class="card-holder">
+    <a class="card" href="/">
+        <div class="image-holder">
+            <div class="image">
+                <img src="@@image" alt="">
+                @@if (infoLabel === true) {
+                    @@include('html/card/infoLabel.html', {
+                        "LabelImg": "@@infoLabelData.img",
+                        "LabelColor": "@@infoLabelData.color",
+                        "LabelText": "@@infoLabelData.text"
+                    })
+                }
+            </div>
+        </div>
+        <div class="info-holder">
+            <div class="price-holder">
+                @@if (sale === true) {
+                    <span class="green-price">@@newprice</span>
+                    <span class="gray-price">@@price</span>
+                }
+                @@if (sale === false) {
+                    <span class="green-price">@@price</span>
+                }
+            </div>
+            <div class="info-holder">
+                @@description
+            </div>
+        </div>
+    </a>
+    <button class="heart">
+        <img class="heart-img" src="/images/card/heart.svg" alt="">
+    </button>
+    <div class="additional-info">
+        @@if (composition !== ""){
+            <div class="composition">
+                @@composition
+            </div>   
+        }
+        <div class="cart">
+            <div class="cart-holder">
+                <div class="counter">
+                    <button class="left counter">-</button>
+                    <input class="counter" type="number" value="1">
+                    <button class="right counter">+</button>
+                </div>
+                <button class="toCart">
+                    В корзину
+                </button>
+            </div>
+            <div class="cart-text">
+                <button>Купить в один клик</button>
+            </div>
+            
         </div>
     </div>
-    <div class="info-holder">
-        @@if (sale === true) {
-            
-        }
-    </div>
-    
-
 </div>
