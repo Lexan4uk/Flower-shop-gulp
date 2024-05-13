@@ -4,7 +4,7 @@
             <div class="image">
                 <img src="@@image" alt="">
                 @@if (infoLabel === true) {
-                    @@include('html/card/infoLabel.html', {
+                    @@include('html/custom_pieces/card/infoLabel.html', {
                         "LabelImg": "@@infoLabelData.img",
                         "LabelColor": "@@infoLabelData.color",
                         "LabelText": "@@infoLabelData.text"
@@ -22,7 +22,7 @@
                     <span class="green-price">@@price</span>
                 }
             </div>
-            <div class="info-holder">
+            <div class="desc-holder">
                 @@description
             </div>
         </div>

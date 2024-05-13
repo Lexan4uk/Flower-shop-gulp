@@ -1,0 +1,30 @@
+.dropdown-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    button {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Rubik';
+        font-size: 18px;
+        font-weight: 300;
+        border: 0px;
+        background-color: #F5F9EC;
+        border-left: 1px solid #4444441f;
+        padding: 22px;
+        &:first-child {
+            border-left: none;
+          }
+    }
+}
+@include media-down($bp3) {
+    .dropdown-menu {
+        grid-template-columns: 1fr;
+        button {
+            border: 0px;
+            border-top: 1px solid #4444441f;
+            &:first-child {
+                border-top: none;
+              }
+        }
+    }
+}

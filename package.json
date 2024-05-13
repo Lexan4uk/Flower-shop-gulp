@@ -19,6 +19,7 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
+    "gulp-compile-handlebars": "^0.6.1",
     "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
@@ -44,12 +45,13 @@
     "postcss-media-minmax": "^5.0.0",
     "sass": "^1.43.4",
     "webp-converter": "2.2.3",
-    "gulp-compile-handlebars": "^0.6.1"
+    "swiper": "^11.1.2"
   },
   "overrides": {
     "lodash.template": "^4.5.0"
   },
   "dependencies": {
-    "npm": "^8.7.0"
+    "npm": "^8.7.0",
+    "swiper": "^11.1.2"
   }
 }

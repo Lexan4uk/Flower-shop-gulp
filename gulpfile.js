@@ -118,13 +118,13 @@ export const js = () => {
       gulpIf(
         isBuildFlag,
         babel({
-          presets: ["@babel/preset-env"],
+          presets: ['@babel/preset-env'],
         })
       )
     )
     .pipe(gulpIf(isBuildFlag, terser()))
     .pipe(gulp.dest(path.build.js, { sourcemaps: !isBuildFlag }))
-    .pipe(sync.stream());
+    .pipe(sync.stream())
 };
 
 export const images = () => {
@@ -177,6 +177,7 @@ export const watchFiles = () => {
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], images);
 };
+
 
 const watch = gulp.parallel(watchFiles, browserSync);
 

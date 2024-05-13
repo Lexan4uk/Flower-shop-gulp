@@ -103,9 +103,9 @@ header {
         line-height: 21.33px;
         letter-spacing: 0.05em;
         font-weight: 300;
-      }
-      a:first-child {
-        border-left: none;
+        &:first-child {
+          border-left: none;
+        }
       }
     }
   }
