@@ -1,8 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-  /*const swiper = new Swiper('.card-swiper', {
-    speed: 400,
+  const swiper = new Swiper('.card-swiper', {
     slidesPerView: 1
   });
-  console.log('fdfdfd')*/
 });
