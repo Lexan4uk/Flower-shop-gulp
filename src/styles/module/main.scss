@@ -1,6 +1,21 @@
 main {
-  min-height: 2000px; //jkbjkbfjkdbfdjkfbdjkfdjkfbdjkfbdjkjkdfbdkjfbdjkfdjkfdbfjkdbfjkdbkjsfnskjfbsdjkfnsdkfbnsdsbdfjksdbfjkdsbfjkdsbfdsjkfbdsjkfbsjfbsdjk
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .big-swiper {
+    overflow: hidden;   
+    width: 100%;
+    position: relative;
+    .swiper-pagination {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      height: fit-content;
+      width: fit-content;
+    }
+  }
   .block-padding {
     
     .dropdown-holder {
@@ -14,12 +29,12 @@ main {
           margin-bottom: 20px;
       }
     }
-    .seasonal {
-      margin-top: 60px;
+    .cards-container {
+      margin-top: 120px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      .seasonal-text {
+      .container-text {
           display: flex;
           justify-content: center;
           text-align: center;
@@ -28,55 +43,13 @@ main {
           font-weight: 700;
           margin-bottom: 20px;
       }
-      .seasonal-cards {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 75px;
-          margin-bottom: 20px;
-          .card-element {
-              height: 409px;
-              &:hover {
-                  z-index: 2;
-              }
-          }
-      }
-    }
-  }
-  
-}
-@include media-down($bp1) { 
-  main {
-    .block-padding {
-      .seasonal {
-        margin-top: 60px;
-        .seasonal-text {
-            font-size: 36px;
-        }
-        .seasonal-cards {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 50px;
-        }
-      }
-    }
-  }
-}
-@include media-down($bp3) { 
-  main {
-    .block-padding {
-      .dropdown-holder {
-        margin-top: 18px;
-        .dropdown-text {
-            font-size: 22px;
-        }
-      }
-      .seasonal {
-        margin-top: 60px;
-        .seasonal-text {
-            font-size: 22px;
-        }
-        .seasonal-cards {
-            grid-template-columns: 1fr;
-            
+      .card-swiper {
+        max-width: 100%;
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 75px;
+            margin-bottom: 20px;
             .card-element {
                 height: 409px;
                 &:hover {
@@ -86,5 +59,69 @@ main {
         }
       }
     }
+    .first-cards-container {
+      margin-top: 60px;
+    }
+  }
+  
+}
+@include media-down($bp1) { 
+  main {
+    .block-padding {
+      .cards-container {
+        margin-top: 60px;
+        .container-text {
+            font-size: 36px;
+        }
+        .card-swiper {
+          .cards {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 50px;
+          }
+        }
+      }
+    }
   }
 }
+@include media-down($bp3) { 
+  main {
+    .big-swiper {
+      .swiper-pagination {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 10px 0 15px 0;
+        background-color: #fff;
+      }
+    }
+    .block-padding {
+      .dropdown-holder {
+        margin-top: 53px;
+        .dropdown-text {
+            font-size: 22px;
+        }
+      }
+      .cards-container {
+        margin-top: 60px;
+        .container-text {
+            font-size: 22px;
+        }
+        .card-swiper {
+          .cards {
+              display: block;
+              gap:0;
+              margin-bottom: 0;
+              .card-element {
+                  height: 409px;
+                  &:hover {
+                      z-index: 2;
+                  }
+              }
+          }
+        }
+      }
+    }
+  }
+}
+

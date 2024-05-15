@@ -12,6 +12,39 @@
     @@include('html/header.html')
 
     <main>
+        <div class="big-swiper">
+            <div class="swiper-wrapper">
+                @@include('html/custom_pieces/big-slider-slide.html', {
+                    "image": "images/main/big-slider-img1.png",
+                    "text": "Всегда в продаже более 100 готовых дизайнерских букетов",
+                    "linkText": "Перейти в каталог",
+                    "linkHref": "/",
+                    "linkIcon": "images/main/angle-right.svg"
+                })
+                @@include('html/custom_pieces/big-slider-slide.html', {
+                    "image": "images/main/big-slider-img1.png",
+                    "text": "АААААААААААААААААААААААААААААААА",
+                    "linkText": "Перейти в каталог",
+                    "linkHref": "/",
+                    "linkIcon": "images/main/angle-right.svg"
+                })
+                @@include('html/custom_pieces/big-slider-slide.html', {
+                    "image": "images/main/big-slider-img1.png",
+                    "text": "ЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ",
+                    "linkText": "Перейти в каталог",
+                    "linkHref": "/",
+                    "linkIcon": "images/main/angle-right.svg"
+                })
+                @@include('html/custom_pieces/big-slider-slide.html', {
+                    "image": "images/main/big-slider-img1.png",
+                    "text": "fdfdfdfdfdd",
+                    "linkText": "Перейти в каталог",
+                    "linkHref": "/",
+                    "linkIcon": "images/main/angle-right.svg"
+                })
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="block-padding">
             <div class="dropdown-holder">
                 <div class="dropdown-text">
@@ -19,12 +52,202 @@
                 </div>
                 @@include('html/custom_pieces/dropdown_menu.html')
             </div>
-            <div class="seasonal">
-                <div class="seasonal-text">
+            <div class="cards-container first-cards-container">
+                <div class="container-text">
                     СЕЗОННОЕ ПРЕДЛОЖЕНИЕ
                 </div>
                 <div class="card-swiper">
-                    <div class="seasonal-cards swiper-wrapper">
+                    <div class="cards swiper-wrapper">
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower1-1.png",
+                                "price": "1 600 ₽",
+                                "description": "Минибукет 1600-6",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower1-2.png",
+                                "price": "99 ₽",
+                                "description": "Нобилис",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "1 цветочек"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower1-3.png",
+                                "price": "6 600 ₽",
+                                "description": "Роза Freedom 51 шт.",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#FF5555", "img": "/images/card/award.svg", "text": "АКЦИЯ"},
+                                "sale":true,
+                                "newprice":"5 900 ₽",
+                                "composition": "Куча розовых цветов"
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower1-4.png",
+                                "price": "1 200 ₽",
+                                "description": "Минибукет 1200-3",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice":"",
+                                "composition": ""
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower1-5.png",
+                                "price": "1 250 ₽",
+                                "description": "Минибукет 1200-2",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "Классные цветы реально"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower1-6.png",
+                                "price": "1 750 ₽",
+                                "description": "Роза Telea 51 шт.",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#FF5555", "img": "/images/card/award.svg", "text": "АКЦИЯ"},
+                                "sale":true,
+                                "newprice":"1 500 ₽",
+                                "composition": "Несколько белых роз, несколько красных роз"
+                                
+                            })
+                        </div>
+                    </div>  
+                    
+                </div>
+                @@include('html/custom_pieces/customised_button.html', {
+                    "type": "button",
+                    "path": "",
+                    "bgcolor": "#ffffff00",
+                    "borderColor": "#4BB45E",
+                    "textColor": "#4BB45E",
+                    "text": "СМОТРЕТЬ ВСЕ"
+                })
+            </div>
+            <div class="cards-container">
+                <div class="container-text">
+                    ХИТ ПРОДАЖ
+                </div>
+                <div class="card-swiper">
+                    <div class="cards swiper-wrapper">
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower2-1.png",
+                                "price": "1 600 ₽",
+                                "description": "Минибукет 1600-6 (с водой)",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "Роза - 3  шт. (50 см.), Хризантема кустовая - 4 шт., Лилия Азиатика - 1 шт."
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower2-2.png",
+                                "price": "1 600 ₽",
+                                "description": "Минибукет 1600-6",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "заглушка"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower2-3.png",
+                                "price": "5 900 ₽",
+                                "description": "Роза Freedom 51 шт.",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice": "",
+                                "composition": "заглушка"
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower2-4.png",
+                                "price": "1 400 ₽",
+                                "description": "Минибукет 1400-3",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "заглушка"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower2-5.png",
+                                "price": "1 300 ₽",
+                                "description": "«Бархатный сезон»",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "заглушка"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower2-6.png",
+                                "price": "99 ₽",
+                                "description": "Нобилис",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#55B8FF", "img": "/images/card/tint.svg", "text": "С ВОДОЙ"},
+                                "sale":true,
+                                "newprice":"1 500 ₽",
+                                "composition": "Несколько белых роз, несколько красных роз"
+                                
+                            })
+                        </div>
+                    </div>  
+                    
+                </div>
+                @@include('html/custom_pieces/customised_button.html', {
+                    "type": "button",
+                    "path": "",
+                    "bgcolor": "#ffffff00",
+                    "borderColor": "#4BB45E",
+                    "textColor": "#4BB45E",
+                    "text": "СМОТРЕТЬ ВСЕ"
+                })
+            </div>
+            <div class="cards-container">
+                <div class="container-text">
+                    СО СКИДКОЙ
+                </div>
+                <div class="card-swiper">
+                    <div class="cards swiper-wrapper">
                         <div class="card-element swiper-slide">
                             @@include('html/custom_pieces/card/card.html', {
                                 "image": "/images/main/flower1.png",
@@ -114,7 +337,101 @@
                     "text": "СМОТРЕТЬ ВСЕ"
                 })
             </div>
-            
+            <div class="cards-container">
+                <div class="container-text">
+                    СО СКИДКОЙ
+                </div>
+                <div class="card-swiper">
+                    <div class="cards swiper-wrapper">
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower1.png",
+                                "price": "1 600 ₽",
+                                "description": "Минибукет 1600-6",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower2.png",
+                                "price": "99 ₽",
+                                "description": "Нобилис",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "1 цветочек"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower3.png",
+                                "price": "6 600 ₽",
+                                "description": "Роза Freedom 51 шт.",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#FF5555", "img": "/images/card/award.svg", "text": "АКЦИЯ"},
+                                "sale":true,
+                                "newprice":"5 900 ₽",
+                                "composition": "Куча розовых цветов"
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower4.png",
+                                "price": "1 200 ₽",
+                                "description": "Минибукет 1200-3",
+                                "infoLabel": false,
+                                "infoLabelData" : "",
+                                "sale": false,
+                                "newprice":"",
+                                "composition": ""
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower5.png",
+                                "price": "1 250 ₽",
+                                "description": "Минибукет 1200-2",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                "sale": false,
+                                "newprice":"",
+                                "composition": "Классные цветы реально"
+                                
+                            })
+                        </div>
+                        <div class="card-element swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                                "image": "/images/main/flower6.png",
+                                "price": "1 750 ₽",
+                                "description": "Роза Telea 51 шт.",
+                                "infoLabel": true,
+                                "infoLabelData" : {"color": "#FF5555", "img": "/images/card/award.svg", "text": "АКЦИЯ"},
+                                "sale":true,
+                                "newprice":"1 500 ₽",
+                                "composition": "Несколько белых роз, несколько красных роз"
+                                
+                            })
+                        </div>
+                    </div>  
+                    
+                </div>
+                @@include('html/custom_pieces/customised_button.html', {
+                    "type": "button",
+                    "path": "",
+                    "bgcolor": "#ffffff00",
+                    "borderColor": "#4BB45E",
+                    "textColor": "#4BB45E",
+                    "text": "СМОТРЕТЬ ВСЕ"
+                })
+            </div>
         </div>
         
     </main>
