@@ -16,8 +16,7 @@ main {
       width: fit-content;
     }
   }
-  .block-padding {
-    
+  .flower-card-block {
     .dropdown-holder {
       margin-top: 60px;
       .dropdown-text {
@@ -30,10 +29,15 @@ main {
       }
     }
     .cards-container {
-      margin-top: 120px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid #4444441f;
       display: flex;
       flex-direction: column;
       align-items: center;
+      &:last-child {
+        border-bottom: none;
+      }
       .container-text {
           display: flex;
           justify-content: center;
@@ -63,13 +67,90 @@ main {
       margin-top: 60px;
     }
   }
-  
+  .flower-centers-block {
+    background-color: #FFF5F5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .centers-holder {
+      text-align: center;
+      span {
+        font-family: 'Cormorant Garamond';
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .centers-block {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-auto-flow: column;
+        a {
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-size: 20px;
+          padding: 8px 12px 8px 12px;
+          border-radius: 5px;
+          transition: all 0.1s;
+          &:hover {
+            text-decoration: none;
+            background-color: #FF5555;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .feedback-block {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #4444441f;
+    border-bottom: 1px solid #4444441f;
+    overflow: hidden;
+    .top-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      span {
+        font-size: 24px;
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+      }
+      a {
+        font-size: 14px;
+        color: #407014;
+        font-family: 'Rubik';
+      }
+    }
+    .feedback-swiper {
+      margin-bottom: 40px;
+      .feedback-pagination {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+    .partners-block {
+      margin-bottom: 20px;
+      text-align: center;
+      .top-text-partners {
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
+  }
 }
 @include media-down($bp1) { 
   main {
-    .block-padding {
+    .flower-card-block {
       .cards-container {
-        margin-top: 60px;
+        border-bottom: none;
         .container-text {
             font-size: 36px;
         }
@@ -78,6 +159,31 @@ main {
               grid-template-columns: repeat(2, 1fr);
               gap: 50px;
           }
+        }
+      }
+    }
+  }
+}
+@include media-down($bp2) {
+  main {
+    .feedback-block {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .top-text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+        span {
+          font-size: 22px;
+        }
+      }
+      .feedback-swiper {
+        .feedback-pagination {
+          text-align: center;
+          margin-top: 20px;
         }
       }
     }
@@ -95,7 +201,7 @@ main {
         background-color: #fff;
       }
     }
-    .block-padding {
+    .flower-card-block {
       .dropdown-holder {
         margin-top: 53px;
         .dropdown-text {
@@ -103,7 +209,14 @@ main {
         }
       }
       .cards-container {
-        margin-top: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        a {
+          margin-top: 18px !important;
+        }
+        button {
+          margin-top: 15px;
+        }
         .container-text {
             font-size: 22px;
         }
@@ -122,6 +235,36 @@ main {
         }
       }
     }
+    .flower-centers-block {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .centers-holder {
+        span {
+          font-size: 22px;
+        }
+        .centers-block {
+          text-align: left;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows:auto;
+          grid-auto-flow: row;
+          a {
+            font-weight: 400;
+            font-size: 18px;        
+          }
+        }
+      }
+    }
   }
 }
-
+@include media-down($bp4) {
+  main {
+    .flower-centers-block {
+      .centers-holder {
+        .centers-block {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.feedback-slider-slide {
+    padding: 20px;
+    background-color: #FFFEF2;
+    font-family: 'Rubik';
+    border-radius: 10px;
+    .top-textblock {
+        position: relative;
+        display: flex;
+        width: 100%;
+        .name {
+            font-style: italic;
+        }
+        .datePlace {
+            color: rgba(0, 0, 0, 0.42);
+            display: flex;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(0%, -100%);
+        }
+    }
+    .middle-textblock {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .bottom-textblock {
+        font-weight: 300;
+    }
+}
+@include media-down($bp2) {
+    .feedback-slider-slide {
+        padding: 20px;
+        background-color: #FFFEF2;
+        font-family: 'Rubik';
+        border-radius: 10px;
+        .top-textblock {
+            display: flex;
+            flex-direction: column;
+            .datePlace {
+                flex-direction: column;
+            }
+            .slash {
+                display: none;
+            }
+        }
+    }
+}
