@@ -136,12 +136,112 @@ main {
       }
     }
     .partners-block {
-      margin-bottom: 20px;
       text-align: center;
       .top-text-partners {
         font-family: 'Cormorant Garamond';
         font-weight: 700;
         font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .partners-list-holder {
+        height: 60px;
+        position: relative;
+        overflow-x: hidden;
+        .partners-list {
+          position: absolute;
+          display: flex;
+          justify-content: space-between;
+          width: 1100px;
+        }
+      }
+      
+    }
+  }
+  .useful-articles-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F9EC;
+    .articles-holder {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      .articles-pagination {
+        display: none;
+      }
+    }
+  }
+  .articles-news-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    span {
+      font-size: 36px;
+      font-family: 'Cormorant Garamond';
+      font-weight: 700;
+    }
+    a {
+      font-size: 14px;
+      color: #407014;
+      font-family: 'Rubik';
+    }
+  }
+  .news-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .subscribe-block {
+    width: 100%;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    position: relative;
+    overflow: hidden;
+    background-color: #095E07F2;
+    font-family: 'Rubik';
+    display: flex;
+    justify-content: center;
+    .subscribe-block-bg {
+      position: absolute;
+      top: 0;
+      transform: translate(-45%, -20%);
+      transform-origin: top left;
+      z-index: -1;
+    }
+    .subscribe-block-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+      .text {
+        font-size: 22px;
+        color: #fff;
+        font-weight: 500;
+      }
+      .email-input {
+        width: 100%;
+        border-bottom: 1px #fff solid ;
+        display: flex;
+        justify-content: space-between;
+        .email-place {
+          background-color: #ffffff00;
+          border: none;
+          flex-grow: 1;
+          color: #fff;
+          &::placeholder {
+            font-size: 15px;
+            color: #fff;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .email-text {
+          color: #fff;
+          font-size: 12px;
+          font-weight: 300;
+          font-style: italic;
+        }
       }
     }
   }
@@ -184,6 +284,38 @@ main {
         .feedback-pagination {
           text-align: center;
           margin-top: 20px;
+        }
+      } 
+    }
+    .subscribe-block {
+      .subscribe-block-bg {
+        transform: scale(0.25);
+        transform-origin: top left;
+      }
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .subscribe-block-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        .text {
+          font-size: 22px;
+          color: #fff;
+          font-weight: 500;
+        }
+        .email-input {
+          width: 100%;
+          border-bottom: none;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          .email-place {
+            border-bottom: 1px #fff solid ;
+            &::placeholder {
+              text-align: center;
+            }
+          }
         }
       }
     }
@@ -255,6 +387,10 @@ main {
         }
       }
     }
+    .news-block {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 }
 @include media-down($bp4) {
@@ -264,6 +400,27 @@ main {
         .centers-block {
           grid-template-columns: repeat(1, 1fr);
         }
+      }
+    }
+    .useful-articles-block {
+      .articles-holder {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .articles-pagination {
+          display: block;
+          width: 100%;
+          justify-content: center;
+          display: flex;
+          margin-top: 20px;
+        }
+      }
+    }
+    .articles-news-text {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      span {
+        font-size: 22px;
       }
     }
   }

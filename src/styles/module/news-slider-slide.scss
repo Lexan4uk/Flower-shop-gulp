@@ -1,0 +1,31 @@
+.news-slider-slide {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #4444441f;
+    padding: 20px;
+    font-family: 'Rubik';
+    line-height: 22.5px;
+    &:hover {
+        text-decoration: none;
+    }
+    .top-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        .title {
+            font-size: 18px;
+            color: #4BB45E;
+        }
+        .date {
+            font-family: 'Roboto';
+            font-size: 14px;
+            color: #44444442;
+        }
+    }
+    .bottom-text {
+        .text {
+            font-size: 15px;
+        }
+    }
+}

@@ -12,7 +12,7 @@
     @@include('html/header.html')
 
     <main>
-        <div class="big-swiper">
+        <div class="big-swiper swiper">
             <div class="swiper-wrapper">
                 @@include('html/custom_pieces/big-slider-slide.html', {
                     "image": "images/main/big-slider-img1.png",
@@ -470,7 +470,7 @@
                 <span>ОТЗЫВЫ О «ФЛОРАМАРКТ»</span>
                 <a href="/">Все отзывы <img src="/images/main/angle-right.svg" alt=""></a>
             </div>
-            <div class="feedback-swiper">
+            <div class="feedback-swiper swiper">
                 <div class="swiper-wrapper">
                     @@include('html/custom_pieces/feedback-slider-slide.html', {
                         "name": "Игорь",
@@ -515,23 +515,114 @@
                 <div class="top-text-partners">
                     <span>НАШИ КЛИЕНТЫ И ПАРТНЁРЫ</span>
                 </div>
-                
-            </div><div class="partners-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/images/main/partners/aer.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/ural.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/beel.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/eur.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/tsft.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/gis.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/cat.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/mvid.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/sdek.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/sun.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/sber.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/main/partners/bag.png" alt=""></div>
+                <div class="partners-list-holder block-padding">
+                    <div class="partners-list">
+                        <div><img src="/images/main/partners/aer.png" alt=""></div>
+                        <div><img src="/images/main/partners/ural.png" alt=""></div>
+                        <div><img src="/images/main/partners/beel.png" alt=""></div>
+                        <div><img src="/images/main/partners/eur.png" alt=""></div>
+                        <div><img src="/images/main/partners/tsft.png" alt=""></div>
+                        <div><img src="/images/main/partners/gis.png" alt=""></div>
+                        <div><img src="/images/main/partners/cat.png" alt=""></div>
+                        <div><img src="/images/main/partners/mvid.png" alt=""></div>
+                        <div><img src="/images/main/partners/sdek.png" alt=""></div>
+                        <div><img src="/images/main/partners/sun.png" alt=""></div>
+                        <div><img src="/images/main/partners/sber.png" alt=""></div>
+                        <div><img src="/images/main/partners/bag.png" alt=""></div>
                     </div>
                 </div>
+                
+            </div>
+        </div>
+        <div class="useful-articles-block">
+            <div class="articles-holder block-padding">
+                <div class="articles-news-text">
+                    <span>ПОЛЕЗНЫЕ СТАТЬИ</span>
+                    <a href="/">Все статьи <img src="/images/main/angle-right.svg" alt=""></a>
+                </div>
+                <div class="articles-swiper swiper">
+                    <div class="swiper-wrapper">
+                        @@include('html/custom_pieces/articles-slider-slide.html', {
+                            "image": "/images/main/articles/articles-1.png",
+                            "date": "26.12.2020",
+                            "title": "Заказ цветов и букетов онлайн",
+                            "text": "Заказ букетов через Интернет становится все более популярным. Наши цветочные базы и онлайн-магазин предоставляют услуги по доставке букетов в Москве и МО. Это удобно, быстро, и обычно неожиданно для получателя. Наши цветочные композиции помогут поднять настроение, или выразить уважение и любовь."
+                        })
+                        @@include('html/custom_pieces/articles-slider-slide.html', {
+                            "image": "/images/main/articles/articles-2.png",
+                            "date": "28.12.2020",
+                            "title": "Праздничные букеты на заказ с доставкой",
+                            "text": "Лучшим подарком и его дополнением являются цветы. Они считаются незаменимым атрибутом любого праздника. На нашем официальном сайте можно выбрать понравившийся вариант букета, и заказать его. Доставка букетов осуществляется в любое время в назначенное место."
+                        })
+                        @@include('html/custom_pieces/articles-slider-slide.html', {
+                            "image": "/images/main/articles/articles-3.png",
+                            "date": "30.12.2020",
+                            "title": "Роскошные розы в букетах с доставкой",
+                            "text": "Эффектный букет роз — всегда приятный подарок. Юные девушки и взрослые женщины обрадуются такому элегантному знаку внимания. Чтобы признаться в чувствах или выразить благодарность, довольно заказать розы с доставкой."
+                        })
+                        @@include('html/custom_pieces/articles-slider-slide.html', {
+                            "image": "/images/main/articles/articles-2.png",
+                            "date": "30.12.2020",
+                            "title": "Заглушка",
+                            "text": "Эффектный букет роз — всегда приятный подарок. Юные девушки и взрослые женщины обрадуются такому элегантному знаку внимания. Чтобы признаться в чувствах или выразить благодарность, довольно заказать розы с доставкой."
+                        })
+                        @@include('html/custom_pieces/articles-slider-slide.html', {
+                            "image": "/images/main/articles/articles-3.png",
+                            "date": "30.12.2020",
+                            "title": "Заглушка",
+                            "text": "Эффектный букет роз — всегда приятный подарок. Юные девушки и взрослые женщины обрадуются такому элегантному знаку внимания. Чтобы признаться в чувствах или выразить благодарность, довольно заказать розы с доставкой."
+                        })
+                    </div>
+                </div>
+                <div class="articles-pagination swiper-pagination-hidden">
+                </div>
+            </div>
+        </div>
+        <div class="news-block block-padding">
+            <div class="articles-news-text">
+                <span>НОВОСТИ</span>
+                <a href="/">Все новости <img src="/images/main/angle-right.svg" alt=""></a>
+            </div>
+            <div class="news-swiper swiper">
+                <div class="swiper-wrapper">
+                    @@include('html/custom_pieces/news-slider-slide.html', {
+                        "date": "26.12.2020",
+                        "title": "Вакансия флориста",
+                        "text": "<strong>Требования:</strong><br>Опыт работы с горшечными растениями; <br>Опыт работы в розничных продажах желателен; <br>Хороший вкус и творческий потенциал, приветствуется;"
+                    })
+                    @@include('html/custom_pieces/news-slider-slide.html', {
+                        "date": "27.12.2020",
+                        "title": "Цветочная компания ФлораМаркт делает уникальное предложение для корпоративных клиентов",
+                        "text": "Сделайте Ваш бизнес более привлекательным с помощью цветов! Ваша репутация может опережать Вас, вы можете быть на вершине славы, но вот как сохранить ее? Может, стоит украсить Ваше рабочее место свежесрезанными цветами?"
+                    })
+                    @@include('html/custom_pieces/news-slider-slide.html', {
+                        "date": "26.12.2020",
+                        "title": "Заглушка",
+                        "text": "<strong>Заглушка:</strong><br>Заглушка <br>"
+                    })
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-block">
+            <img class="subscribe-block-bg" src="images/main/subscribe-block-bg.png" alt="">
+            <div class="subscribe-block-content block-padding">
+                <div class="text">
+                    ПОДПИСАТЬСЯ<br> НА СКИДКИ И АКЦИИ
+                </div>
+                <div class="email-input">
+                    <input type="text" placeholder="Ваш Email" class="email-place"></input>
+                    <div class="email-text">Мы присылаем письма не чаще 1 раза в месяц</div>
+                </div>
+                @@include('html/custom_pieces/customised_button.html', {
+                    "type": "button",
+                    "path": "",
+                    "bgcolor": "#fff",
+                    "borderColor": "#fff",
+                    "textColor": "#4BB45E",
+                    "text": "ПОДПИСАТЬСЯ",
+                    "additional" : ""
+                })
+            </div>
         </div>
     </main>
 

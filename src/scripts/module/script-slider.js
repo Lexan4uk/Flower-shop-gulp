@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ];
 
         return '<span class="' + className + '">' +
-          '<svg width="8" height="8">' +
+          '<svg style="transform: translate(0%, -75%);" width="8" height="8">' +
           bulletSVGs[index] +
           '</svg>' +
           '</span>';
@@ -38,6 +38,35 @@ window.addEventListener('DOMContentLoaded', () => {
     width:100,
     loop: true,
   });
+  const swiper4 = new Swiper('.articles-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.articles-pagination',
+      clickable: true,
+    },
+    breakpoints : {
+      950: {
+        slidesPerView: 3,
+      },
+      426: {
+        slidesPerView: 2,
+      }
+    }
+  });
+  const swiper5 = new Swiper('.news-swiper', {
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+        767: {
+            slidesPerView: 2
+        },
+        0: {
+            slidesPerView: 1
+        }
+    }
+});
   /*const swiper2 = new Swiper('.card-swiper-e', {
     init: false,
     slidePerView: 1
