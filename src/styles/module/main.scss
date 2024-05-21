@@ -245,6 +245,78 @@ main {
       }
     }
   }
+  .main-info-block {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .main-info-holder {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+      .logo-text {
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .gray-text {
+        font-family: 'Rubik';
+        font-size: 15px;
+        line-height: 22.5px;
+      }
+      .top-infoblock {
+        .logo-text {
+          font-size: 36px !important;
+          margin-bottom: 20px !important;
+        }
+      }
+      .infoblock {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 30px;
+        align-items: flex-start;
+        img {
+          max-width: 445px;
+          max-height: 296px;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          display: block;
+        }
+        .first-1 {
+          grid-column: 1;
+          grid-row: 1 / span 2;
+          align-self: center;
+        }
+        .second-1 {
+          grid-column: 2;
+          grid-row: 1;
+          align-self: flex-end;
+        }
+        .third-1 {
+          grid-column: 2;
+          grid-row: 2;
+          align-self: flex-start;
+        }
+        .first-2 {
+          grid-column: 2;
+          grid-row: 1 / span 2;
+          align-self: center;
+        }
+        .second-2 {
+          grid-column: 1;
+          grid-row: 1;
+          align-self: flex-end;
+        }
+        .third-2 {
+          grid-column: 1;
+          grid-row: 2;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
 }
 @include media-down($bp1) { 
   main {
@@ -353,8 +425,9 @@ main {
             font-size: 22px;
         }
         .card-swiper {
+          margin-bottom: 10px;
           .cards {
-              display: block;
+              display: flex;
               gap:0;
               margin-bottom: 0;
               .card-element {
@@ -421,6 +494,53 @@ main {
       gap: 5px;
       span {
         font-size: 22px;
+      }
+    }
+    .main-info-block {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .main-info-holder {
+        .logo-text {
+          font-size: 20px;
+          text-align: center;
+        }
+        .gray-text {
+          font-family: 'Rubik';
+          font-size: 15px;
+        }
+        .top-infoblock {
+          .logo-text {
+            font-size: 22px !important;
+          }
+        }
+        .infoblock {
+          grid-template-columns: auto;
+          gap: 10px;
+          .first-1 {
+            grid-column: 1;
+            grid-row: 2;
+          }
+          .second-1 {
+            grid-column: 1;
+            grid-row: 1;
+          }
+          .third-1 {
+            grid-column: 1;
+            grid-row: 3;
+          }
+          .first-2 {
+            grid-column: 1;
+            grid-row: 2;
+          }
+          .second-2 {
+            grid-column: 1;
+            grid-row: 1;
+          }
+          .third-2 {
+            grid-column: 1;
+            grid-row: 3;
+          }
+        }
       }
     }
   }

@@ -4,19 +4,10 @@ window.addEventListener('DOMContentLoaded', () => {
       el: '.swiper-pagination',
       clickable: true,
       renderBullet: function (index, className) {
-        var bulletSVGs = [
-          '<circle cx="4" cy="4" r="8" stroke="black" stroke-width="1" fill="red" />',
-          '<circle cx="4" cy="4" r="8" stroke="black" stroke-width="1" fill="red" />',
-          '<circle cx="4" cy="4" r="8" stroke="black" stroke-width="1" fill="red" />',
-          '<circle cx="4" cy="4" r="8" stroke="black" stroke-width="1" fill="red" />',
-        ];
-
-        return '<span class="' + className + '">' +
-          '<svg style="transform: translate(0%, -75%);" width="8" height="8">' +
-          bulletSVGs[index] +
-          '</svg>' +
-          '</span>';
+        return '<svg class="' + className + '" width="10" height="10"><circle cx="10" cy="10" r="20"/></svg>';
       },
+      bulletClass: 'my-bullet-class',
+      bulletActiveClass: 'my-bullet-active-class'    
     },
   });
   const swiper2 = new Swiper('.feedback-swiper', {
@@ -25,7 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
     loop: true,
     pagination: {
       el: '.feedback-pagination',
-      clickable: true
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<svg class="' + className + '" width="10" height="10"><circle cx="10" cy="10" r="20"/></svg>';
+      },
+      bulletClass: 'my-bullet-class',
+      bulletActiveClass: 'my-bullet-active-class'   
     },
     breakpoints: {
       950: {
@@ -45,6 +41,11 @@ window.addEventListener('DOMContentLoaded', () => {
     pagination: {
       el: '.articles-pagination',
       clickable: true,
+      renderBullet: function (index, className) {
+        return '<svg class="' + className + '" width="10" height="10"><circle cx="10" cy="10" r="20"/></svg>';
+      },
+      bulletClass: 'my-bullet-class',
+      bulletActiveClass: 'my-bullet-active-class'   
     },
     breakpoints : {
       950: {
@@ -67,8 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-  /*const swiper2 = new Swiper('.card-swiper-e', {
-    init: false,
+  const swiper6 = new Swiper('.card-swsiper', {
     slidePerView: 1
-  });*/
+  });
 });

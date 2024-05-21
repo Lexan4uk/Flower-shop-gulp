@@ -24,3 +24,14 @@ main {
   overflow: hidden;
   border-radius: 10px;
 }
+.my-bullet-class {
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px #4BB45E solid;
+  fill: #fff;
+  height: fit-content;
+  cursor: pointer;
+}
+.my-bullet-active-class {
+  fill: #4BB45E;
+}
