@@ -12,8 +12,10 @@ body {
   width: 100%;
 }
 main {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .swiper {
   height: auto; 

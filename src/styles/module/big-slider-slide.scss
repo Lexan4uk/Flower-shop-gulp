@@ -1,19 +1,22 @@
 .big-slider-slide {
     overflow-y: hidden;   
     max-height: 500px;
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     img {
         width: 100%;
     } 
     .block-padding { 
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        padding-top: 10vh;
+        padding-bottom: 10vh;
         .slider-infoblock {
             padding: 30px 50px 40px 50px;
             background-color: #fff;
             width: fit-content;
             border-radius: 10px;
+
             .text-holder {
                 max-width: 363px;
                 span {
@@ -48,11 +51,12 @@
 @include media-down($bp3) {
     .big-slider-slide {
         .block-padding { 
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, 0%);
+            padding-top: 18vh;
+            padding-bottom: 2vh;
             .slider-infoblock {
                 padding: 20px 30px 30px 30px;
+                width: 100%;
+                box-sizing: border-box;
                 .text-holder {
                     span {
                         font-size: 24px;

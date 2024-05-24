@@ -1,0 +1,13 @@
+.paths-block {
+    font-family: 'Rubik';
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 20px;
+    a:hover {
+        text-decoration: none;
+    }
+    & a:last-child {
+        pointer-events: none;
+        color: #C0C0C0;
+    }
+}

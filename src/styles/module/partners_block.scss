@@ -1,0 +1,21 @@
+.partners-block {
+    text-align: center;
+    .top-text-partners {
+      font-family: 'Cormorant Garamond';
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .partners-list-holder {
+      height: 60px;
+      position: relative;
+      overflow-x: hidden;
+      .partners-list {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 1100px;
+      }
+    }
+    
+  }

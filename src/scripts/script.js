@@ -6,4 +6,5 @@ document.addEventListener("DOMContentLoaded", function(){
     @@include('module/supportWebp.js')
     @@include('module/card.js')
     @@include('module/script-slider.js')
+    @@include('module/catalog.js')
 })

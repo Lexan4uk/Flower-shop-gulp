@@ -6,7 +6,7 @@
     font-weight: 300;
     position: relative;
     height: fit-content;
-    width: fit-content;
+    width: 100%;
     z-index: 1;
     .card {
         display: block;
@@ -158,5 +158,12 @@
                 
             }
         }
+        &:hover {   
+            box-shadow: none;
+            .additional-info {
+                display: none;
+                opacity: 0;
+            }
+        } 
     }
 }

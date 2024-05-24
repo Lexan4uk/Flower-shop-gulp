@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.big-swiper', {
+  const big_swiper = new Swiper('.big-swiper', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -10,7 +10,12 @@ window.addEventListener('DOMContentLoaded', () => {
       bulletActiveClass: 'my-bullet-active-class'    
     },
   });
-  const swiper2 = new Swiper('.feedback-swiper', {
+  if (window.innerWidth < 768) {
+    const card_swiper = new Swiper('.card-swiper', {
+      slidePerView: 1
+    });
+  }
+  const feedback_swiper = new Swiper('.feedback-swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
@@ -30,11 +35,11 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
-  const swiper3 = new Swiper('.partners-swiper', {
+  const partners_swiper = new Swiper('.partners-swiper', {
     width:100,
     loop: true,
   });
-  const swiper4 = new Swiper('.articles-swiper', {
+  const articles_swiper = new Swiper('.articles-swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -56,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
-  const swiper5 = new Swiper('.news-swiper', {
+  const news_swiper = new Swiper('.news-swiper', {
     spaceBetween: 30,
     loop: true,
     breakpoints: {
@@ -67,8 +72,5 @@ window.addEventListener('DOMContentLoaded', () => {
             slidesPerView: 1
         }
     }
-});
-  const swiper6 = new Swiper('.card-swsiper', {
-    slidePerView: 1
   });
 });

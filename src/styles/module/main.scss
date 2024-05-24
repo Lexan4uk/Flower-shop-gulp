@@ -1,11 +1,9 @@
 main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   .big-swiper {
     overflow: hidden;   
     width: 100%;
+    height: 100%;
+    max-height: 500px;
     position: relative;
     .swiper-pagination {
       position: absolute;
@@ -116,7 +114,6 @@ main {
     .top-text {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 20px;
       span {
         font-size: 24px;
         font-family: 'Cormorant Garamond';
@@ -129,32 +126,12 @@ main {
       }
     }
     .feedback-swiper {
+      padding-top: 20px;
       margin-bottom: 40px;
       .feedback-pagination {
         text-align: center;
         margin-top: 20px;
       }
-    }
-    .partners-block {
-      text-align: center;
-      .top-text-partners {
-        font-family: 'Cormorant Garamond';
-        font-weight: 700;
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-      .partners-list-holder {
-        height: 60px;
-        position: relative;
-        overflow-x: hidden;
-        .partners-list {
-          position: absolute;
-          display: flex;
-          justify-content: space-between;
-          width: 1100px;
-        }
-      }
-      
     }
   }
   .useful-articles-block {
@@ -396,12 +373,13 @@ main {
 @include media-down($bp3) { 
   main {
     .big-swiper {
+      padding-bottom: 20px;
       .swiper-pagination {
         top: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        padding: 10px 0 15px 0;
+        padding: 5px 0 15px 0;
         background-color: #fff;
       }
     }
@@ -426,6 +404,7 @@ main {
         }
         .card-swiper {
           margin-bottom: 10px;
+          overflow: hidden;
           .cards {
               display: flex;
               gap:0;

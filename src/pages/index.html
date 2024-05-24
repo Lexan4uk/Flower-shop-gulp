@@ -210,7 +210,7 @@
                                 "image": "/images/main/flower2-5.png",
                                 "price": "1 300 ₽",
                                 "description": "«Бархатный сезон»",
-                                "infoLabel": true,
+                                "infoLabel": false,
                                 "infoLabelData" : "",
                                 "sale": false,
                                 "newprice":"",
@@ -484,7 +484,7 @@
                         "time": "31.01.2021 - 15:20",
                         "place": "м. Щёлковская",
                         "rate": 5,
-                        "text": "Очень приятно> Подарок понравился, качество хорошее. Пользоваться сервисом удобно, приятно. Порекомендую знакомым."
+                        "text": "Очень приятно&rang; Подарок понравился, качество хорошее. Пользоваться сервисом удобно, приятно. Порекомендую знакомым."
                     })
                     @@include('html/custom_pieces/feedback-slider-slide.html', {
                         "name": "Иван",
@@ -511,28 +511,7 @@
                 </div>
                 <div class="feedback-pagination"></div>
             </div>
-            <div class="partners-block">
-                <div class="top-text-partners">
-                    <span>НАШИ КЛИЕНТЫ И ПАРТНЁРЫ</span>
-                </div>
-                <div class="partners-list-holder block-padding">
-                    <div class="partners-list">
-                        <div><img src="/images/main/partners/aer.png" alt=""></div>
-                        <div><img src="/images/main/partners/ural.png" alt=""></div>
-                        <div><img src="/images/main/partners/beel.png" alt=""></div>
-                        <div><img src="/images/main/partners/eur.png" alt=""></div>
-                        <div><img src="/images/main/partners/tsft.png" alt=""></div>
-                        <div><img src="/images/main/partners/gis.png" alt=""></div>
-                        <div><img src="/images/main/partners/cat.png" alt=""></div>
-                        <div><img src="/images/main/partners/mvid.png" alt=""></div>
-                        <div><img src="/images/main/partners/sdek.png" alt=""></div>
-                        <div><img src="/images/main/partners/sun.png" alt=""></div>
-                        <div><img src="/images/main/partners/sber.png" alt=""></div>
-                        <div><img src="/images/main/partners/bag.png" alt=""></div>
-                    </div>
-                </div>
-                
-            </div>
+            @@include('html/custom_pieces/partners_block.html')
         </div>
         <div class="useful-articles-block">
             <div class="articles-holder block-padding">
