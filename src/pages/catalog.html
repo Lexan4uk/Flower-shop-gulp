@@ -13,15 +13,16 @@
 
     <main class="catalog">
         <div class="flower-card-block block-padding">
-            <div class="paths-block">
-                @@loop('html/custom_pieces/paths_block/paths_piece.html',
-                [
-                    {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/"},
-                    {"name": "Каталог цветов&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/"},
-                    {"name": "Для мамы&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/"},
-                    {"name": "На день рождения", "path": ""}
-                ])
-            </div>
+                @@include( 'html/custom_pieces/paths_block/paths_block.html',
+                    {
+                        "data": [
+                            {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/"},
+                            {"name": "Каталог цветов&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/"},
+                            {"name": "Для мамы&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/"},
+                            {"name": "На день рождения", "path": ""}
+                        ]
+                    }
+                )
             <div class="dropdown-holder">
                 <div class="dropdown-text">
                     ЦВЕТЫ ДЛЯ МАМЫ<br> НА ДЕНЬ РОЖДЕНИЯ В МОСКВЕ
