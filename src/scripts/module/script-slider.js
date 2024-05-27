@@ -73,4 +73,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
   });
+  if (window.innerWidth < 768) {
+    const personnel_swiper = new Swiper('.personnel-swiper', {
+    });
+  }
+  
 });

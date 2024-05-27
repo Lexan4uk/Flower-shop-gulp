@@ -1,0 +1,29 @@
+.side-menu {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    button {
+        background-color: #fff;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-top: 1px solid #4444441f;
+        text-align: left;
+        padding: 15px;
+        font-family: 'Rubik';
+        font-size: 18px;
+        color: #4BB45E;
+        img {
+            margin-right: 10px;
+        }
+        &:last-child {
+            border-bottom: 1px solid #4444441f;
+        }
+        
+    }
+    .active {
+        background-color: #4BB45E1A;
+    }
+
+    
+}

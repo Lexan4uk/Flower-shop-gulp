@@ -1,0 +1,25 @@
+.personnel-card {
+    .img-holder {
+        width: 100%;
+        img {
+            border-radius: 5px;
+            width: 100%; 
+            height: auto;
+            display: block;
+        }
+    }
+    
+    h1 {
+        font-family: 'Cormorant Garamond';
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    span {
+        font-family: 'Rubik';
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

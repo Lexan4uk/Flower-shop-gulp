@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+        "title": "О компании"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main class="about">
+        <div class="about-block block-padding">
+            @@include( 'html/custom_pieces/paths_block.html',{
+                "data": [
+                    {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/hehe"},
+                    {"name": "о компании", "path": "/haha"}
+                ]
+            })
+            <div class="grid-holder">
+                <div class="side-menu-holder">
+                    @@include( 'html/custom_pieces/side-menu.html', {
+                        "data": [
+                            {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "active"},
+                            {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": ""},
+                            {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": ""},
+                            {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": ""},
+                            {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": ""},
+                            {"text": "Видео", "img": "/images/side-menu/video.svg", "class": ""},
+                            {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": ""},
+                        ]
+                    })
+                </div>
+                <div class="about-text">
+                    <div class="textblock">
+                        <div class="big-text">
+                            О КОМПАНИИ
+                        </div>
+                        <div>
+                            <span>Уважаемые Дамы и Господа, Компания ФлораМаркт рада приветствовать Вас на своем сайте!</span>
+                        </div>
+                        <div>
+                            <h1>Цветочная оптово розничная компания «ФлораМаркт»</h1>
+                            <span>
+                                Одна из ведущих компаний, успешно работающих в цветочной индустрии России более 15 лет.<br><br>
+                                Основное направление — это оптовая торговля срезанными цветами, горшечными растениями, посадочным материалом, луковицами, семенами газонных трав, искусственными растениями, сухоцветами и сопутствующими товарами.<br><br>
+                                Многолетнее сотрудничество с производителями и лучшими брокерами из Голландии, Италии, Дании, Израиля, Латинской Америки, Африки и России позволяет постоянно поддерживать широкий ассортимент, продаваемой нами продукции, включающий в себя несколько тысяч наименований.<br><br>
+                                Являясь лидером в области создания и доставки букетов и композиций из цветов, ФлораМаркт по праву гордится такими своими конкурентными преимуществами, как богатый ассортимент и высокое качество цветов, профессионализм операторов и флористов, оперативность доставки, конкурентные цены и широкая линейка скидок, удобство оформления и оплаты заказа цветов.
+                            </span>
+                        </div>
+                        <div>
+                            <h1>Богатый ассортимент и высокое качество цветов</h1>
+                            <span>
+                                Работая напрямую с цветочными плантациями и обладая собственными прекрасными условиями для содержания цветов, ФлораМаркт имеет возможность всегда предлагать своим клиентам лучшее — высокое качество и отличный ассортимент. В каталоге компании Вы всегда найдете, как классические розы, лилии и гвоздики, так и экзотические и полевые цветы. Также компания предлагает композиции из сухоцветов и комнатные цветочные растения в горшках и кашпо.
+                            </span>
+                        </div>
+                        <div>
+                            <h1>Профессионализм операторов и флористов</h1>
+                            <span>
+                                Компания ФлораМаркт во главу угла ставит не только высокое качество самих цветов, но и качество предоставляемых услуг. Именно поэтому в компании работают только профессионалы.<br><br>
+                                Опытные операторы на телефоне всегда помогут подобрать подходящий букет по случаю, а профессиональные флористы, победители многочисленных флористических конкурсов, создадут для Вас оригинальные и неповторимые букеты и цветочные композиции на заказ.
+                            </span>
+                        </div>
+                        <div>
+                            <h1>Удобство оформления и оплаты заказа цветов</h1>
+                            <span>При организации работы компании в целом и сайте www.флорамаркт.рф в частности одним из важнейших моментов было и остается по сей день удобство заказа и оплаты услуг компании.<br><br>
+                                Сделать заказ цветов в ФлораМаркт можно по телефонам +7 965 151-18-39, 8 977 499 18 18 или через сайт компании. Опытные операторы обязательно помогут Вам определить и +правильно подобрать букет для предстоящего торжества. Вы также можете заказать выезд менеджера к Вам домой или в офис.<br><br>
+                                Оплата заказа осуществляется в ФлораМаркт любым удобным для Вас способом: наличными при доставке, курьеру, безналичным способом, при помощи кредитной карты, электронным платежом.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="personnel">
+                    <div class="big-text">
+                        ОТДЕЛ ПО РАБОТЕ С КЛИЕНТАМИ
+                    </div>
+                    <div class="personnel-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-1.png",
+                                    "name": "Юлия",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-2.png",
+                                    "name": "Наталья",
+                                    "desc": "Менеджер по работе с клиентами"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-3.png",
+                                    "name": "Светлана",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-4.png",
+                                    "name": "Виктория",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-5.png",
+                                    "name": "Василина",
+                                    "desc": "Менеджер по работе с клиентами"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-6.png",
+                                    "name": "Мария",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-7.png",
+                                    "name": "Наталья",
+                                    "desc": "Менеджер по работе с клиентами"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-8.png",
+                                    "name": "Светлана",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-9.png",
+                                    "name": "Василина",
+                                    "desc": "Менеджер по работе с клиентами"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-10.png",
+                                    "name": "Мария",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-11.png",
+                                    "name": "Наталья",
+                                    "desc": "Менеджер по работе с клиентами"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-12.png",
+                                    "name": "Светлана",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-13.png",
+                                    "name": "Екатерина",
+                                    "desc": "Менеджер по работе с клиентами"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-14.png",
+                                    "name": "Ксения",
+                                    "desc": "Менеджер по развитию международного направления"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include( 'html/custom_pieces/personnel-slider-slide.html', {
+                                    "img": "/images/about/personnel-15.png",
+                                    "name": "Елена",
+                                    "desc": "Менеджер по работе с клиентами"
+                                })
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="about-feedback-block">
+                <div class="top-text">
+                    <span>ОТЗЫВЫ О «ФЛОРАМАРКТ»</span>
+                    <a href="/">Все отзывы <img src="/images/main/angle-right.svg" alt=""></a>
+                </div>
+                <div class="feedback-swiper swiper">
+                            <div class="swiper-wrapper">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Ильяс",
+                                    "time": "31.01.2021 - 15:20",
+                                    "place": "м. Щёлковская",
+                                    "rate": 5,
+                                    "text": "Очень приятно&rang; Подарок понравился, качество хорошее. Пользоваться сервисом удобно, приятно. Порекомендую знакомым."
+                                })
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Иван",
+                                    "time": "30.01.2020 - 8:20",
+                                    "place": "м. Щёлковская",
+                                    "rate": 4,
+                                    "text": "Заглушка"
+                                })
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Иван",
+                                    "time": "30.01.2020 - 8:20",
+                                    "place": "м. Щёлковская",
+                                    "rate": 2,
+                                    "text": "ЗаглушкаЗаглушкаЗаглушка"
+                                })
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Иван",
+                                    "time": "30.01.2020 - 8:20",
+                                    "place": "м. Щёлковская",
+                                    "rate": 1,
+                                    "text": "ЗаглушкаЗаглушкаЗаглушкаЗаглушкаЗаглушка"
+                                })
+                                
+                            </div>
+                            <div class="feedback-pagination"></div>
+                </div> 
+                @@include('html/custom_pieces/partners_block.html')
+            </div>
+            
+            
+        </div>
+        
+        
+    </main>
+
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+</html>
