@@ -1,176 +1,113 @@
 .about {
-    .about-block {
-        .grid-holder {
-            display: grid;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            .side-menu-holder {
-                grid-column: 2;
-                grid-row: 1 / span 2;
-            }
-            .about-text {
-                grid-column: 1;
-                grid-row: 1;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                .textblock {
-                    max-width: 825px;
-                    .big-text {
-                        font-size: 36px;
-                        font-weight: 700;
-                        font-family: 'Cormorant Garamond';
-                        margin-bottom: 15px;
-                    }
-                    h1 {
-                        font-size: 32px;
-                        font-weight: 700;
-                        font-family: 'Cormorant Garamond';
-                        margin-bottom: 15px;
-                    }
-                    span {
-                        font-size: 17px;
-                        font-weight: 300;
-                        font-family: 'Rubik';
-                    }
-                }
-            } 
-            .personnel {
-                margin-top: 60px;
-                grid-row: 2;
-                .big-text {
-                    font-size: 36px;
-                    font-weight: 700;
-                    font-family: 'Cormorant Garamond';
-                    margin-bottom: 15px;
-                }
-                .personnel-swiper {
-                    .swiper-wrapper {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr 1fr;
-                        gap: 20px;
-                    }
-                }
+    .personnel {
+        margin-top: 60px;
+        grid-row: 2;
+
+        .big-text {
+            font-size: 36px;
+            font-weight: 700;
+            font-family: 'Cormorant Garamond';
+            margin-bottom: 15px;
+        }
+
+        .personnel-swiper {
+            .swiper-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px;
             }
         }
-        .about-feedback-block {
-            padding-top: 60px;
-            margin-bottom: 60px;
-            padding-bottom: 60px;
-            border-top: 1px solid #4444441f;
-            border-bottom: 1px solid #4444441f;
-            .top-text {
-                display: flex;
-                justify-content: space-between;
-                span {
-                  font-size: 24px;
-                  font-family: 'Cormorant Garamond';
-                  font-weight: 700;
-                }
-                a {
-                  font-size: 14px;
-                  color: #407014;
-                  font-family: 'Rubik';
-                }
-            }
-            .feedback-swiper {
-                padding-top: 20px;
-                margin-bottom: 40px;
-                .feedback-pagination {
-                    text-align: center;
-                    margin-top: 20px;
-                }
-            }
-        }
-        
     }
-    
 }
-@include media-down($bp1)  {
+
+.about-feedback-block {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #4444441f;
+    border-bottom: 1px solid #4444441f;
+
+    .top-text {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-size: 24px;
+            font-family: 'Cormorant Garamond';
+            font-weight: 700;
+        }
+
+        a {
+            font-size: 14px;
+            color: #407014;
+            font-family: 'Rubik';
+        }
+    }
+
+    .feedback-swiper {
+        padding-top: 20px;
+        margin-bottom: 40px;
+
+        .feedback-pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+@include media-down($bp1) {
     .about {
-        .about-block {
-            .grid-holder {
-                display: flex;
-                flex-direction: column;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                .side-menu-holder {
-                    display: none;
-                }
-                .about-text {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                } 
-                .personnel {
-                    margin-top: 60px;
-                    .personnel-swiper {
-                        .swiper-wrapper {
-                            grid-template-columns: 1fr 1fr 1fr;
-                            gap: 10px;
-                        }
-                    }
+
+        .personnel {
+            margin-top: 60px;
+
+            .personnel-swiper {
+                .swiper-wrapper {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 10px;
                 }
             }
-            
         }
-        
     }
+
 }
+
 @include media-down($bp3) {
     .about {
-        .about-block {
-            .grid-holder {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                .about-text {
-                    .textblock {
-                        max-width: 825px;
-                        .big-text {
-                            font-size: 28px;
-                            margin-bottom: 10px;
-                        }
-                        h1 {
-                            font-size: 24px;
-                            margin-bottom: 10px;
-                        }
-                        span {
-                            font-size: 14px;
-                        }
-                    }
-                } 
-                .personnel {
-                    margin-top: 20px;
-                    .big-text {
-                        font-size: 28px;
-                        margin-bottom: 10px;
-                    }
-                    .personnel-swiper {
-                        overflow: hidden;
-                        .swiper-wrapper {
-                            gap: 0;
-                            display: flex;
-                            
-                        }
-                    }
+        .personnel {
+            margin-top: 20px;
+
+            .big-text {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            .personnel-swiper {
+                overflow: hidden;
+
+                .swiper-wrapper {
+                    gap: 0;
+                    display: flex;
+
                 }
             }
-            .about-feedback-block {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                margin-bottom: 20px;
-                .top-text {
-                    flex-direction: column;
-                    justify-content: center;
-                    text-align: center;
-                    gap: 5px;
-                    span {
-                      font-size: 22px;
-                    }
-                  }
-            }
-            
         }
-        
+    }
+
+    .about-feedback-block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        .top-text {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 5px;
+
+            span {
+                font-size: 22px;
+            }
+        }
     }
 }

@@ -2,7 +2,7 @@
     width: 255px;
     display: flex;
     flex-direction: column;
-    button {
+    a {
         background-color: #fff;
         border-left: none;
         border-right: none;
@@ -19,10 +19,14 @@
         &:last-child {
             border-bottom: 1px solid #4444441f;
         }
+        &:hover {
+            text-decoration: none;
+        }
         
     }
     .active {
         background-color: #4BB45E1A;
+        pointer-events: none;
     }
 
     

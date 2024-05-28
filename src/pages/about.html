@@ -12,28 +12,28 @@
     @@include('html/header.html')
 
     <main class="about">
-        <div class="about-block block-padding">
+        <div class="information-block block-padding">
             @@include( 'html/custom_pieces/paths_block.html',{
                 "data": [
                     {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/hehe"},
-                    {"name": "о компании", "path": "/haha"}
+                    {"name": "О компании", "path": "/haha"}
                 ]
             })
             <div class="grid-holder">
                 <div class="side-menu-holder">
                     @@include( 'html/custom_pieces/side-menu.html', {
                         "data": [
-                            {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "active"},
-                            {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": ""},
-                            {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": ""},
-                            {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": ""},
-                            {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": ""},
-                            {"text": "Видео", "img": "/images/side-menu/video.svg", "class": ""},
-                            {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": ""},
+                            {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "active", "link": "/"},
+                            {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": "", "link": "/payments.html"},
+                            {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": "", "link": "/delivery.html"},
+                            {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": "", "link": "/"},
+                            {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": "", "link": "/"},
+                            {"text": "Видео", "img": "/images/side-menu/video.svg", "class": "", "link": "/"},
+                            {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": "", "link": "/"},
                         ]
                     })
                 </div>
-                <div class="about-text">
+                <div class="information-text">
                     <div class="textblock">
                         <div class="big-text">
                             О КОМПАНИИ

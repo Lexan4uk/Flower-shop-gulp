@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+        "title": "О компании"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main class="delivery">
+        <div class="information-block block-padding">
+            @@include( 'html/custom_pieces/paths_block.html',{
+                "data": [
+                    {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/hehe"},
+                    {"name": "Доставка", "path": "/haha"}
+                ]
+            })
+            <div class="grid-holder">
+                <div class="side-menu-holder">
+                    @@include( 'html/custom_pieces/side-menu.html', {
+                        "data": [
+                            {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "", "link": "/about.html"},
+                            {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": "", "link": "/payments.html"},
+                            {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": "active", "link": "/"},
+                            {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": "", "link": "/"},
+                            {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": "", "link": "/"},
+                            {"text": "Видео", "img": "/images/side-menu/video.svg", "class": "", "link": "/"},
+                            {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": "", "link": "/"},
+                        ]
+                    })
+                </div>
+                <div class="information-text">
+                    <div class="textblock">
+                        <div class="big-text">
+                            ДОСТАВКА
+                        </div>
+                        <span>Служба доставки компании «ФлораМаркт» осуществляет доставку цветов и букетов в любое удобное для Вас время 365 дней в году, мы работаем без выходных и праздников. Мы готовы нести красоту и радость каждому, кто обратится к нам.</span>
+                    </div>
+                    <div class="textblock">
+                        <h1>Как оформить заказ с доставкой</h1>
+                        <span>Оформить срочную или обычную заявку на доставку букета можно как по телефону, ежедневно <span class="bold">с 9-00 до 21-00,</span>  так и через сайт — круглосуточно. Если стоимость заказа <span class="bold">не менее 5000 рублей</span> — доставка цветов бесплатная.<br><br>
+                            Стоимость доставки цветочных букетов в пределах МКАД напрямую зависит от адреса заказчика и объема заказа.<br><br>
+                            <span class="bold">Стоимость доставки заказа в пределах МКАД:</span>
+                            <div class="grid-span">
+                                <span class="gray-bg green-text">Время доставки</span>
+                                <span class="gray-bg green-text">Сумма заказа от 5000 ₽</span>
+                                <span class="gray-bg green-text">Сумма заказа до 5000 ₽</span>
+                                <span>Более 3 (трех) часов</span>
+                                <span>БЕСПЛАТНО</span>
+                                <span>500 ₽</span>
+                                <span class="gray-bg">Срочная от 1-3 часов</span>
+                                <span class="gray-bg">800 ₽</span>
+                                <span class="gray-bg">800 ₽</span>
+                                <span>К определенному времени</span>
+                                <span>800 ₽</span>
+                                <span>800 ₽</span>
+                                <span class="gray-bg">В метро</span>
+                                <span class="gray-bg">БЕСПЛАТНО</span>
+                                <span class="gray-bg">300 ₽</span>
+                                <span>Доставка ночью</span>
+                                <span>1000 ₽</span>
+                                <span>1000 ₽</span>
+                            </div>
+                            <span><span class="bold">Доставка в пределах Московской области: </span>40 руб. за км.</span>
+                        </span>
+                    </div>
+                    <div class="textblock">
+                        <h1>Особые условия</h1>
+                        <span>
+                            <span class="bold">Скидочные карты действуют только в магазинах, при предъявлении!<br><br></span>
+                            <span class="bold">При бесплатной доставке, скидочные карты не действуют!<br><br></span>
+                            <span class="bold">При заказе товаров по акции, бесплатная доставка не действует!<br><br></span>
+                            <span>
+                                В том случае, если во время привоза вас не оказалось на месте, стоимость повторной доставки будет платной (500 рублей). В предпраздничные и праздничные (Новый год, Международный женский день, День Святого Валентина) оформление заявки на срочные заказы не принимается.<br><br>
+                                Если шкала пробок поднялась выше 8 баллов, мы не гарантируем, что сможем привезти цветы в пределах того временного промежутка, который был оговорен.<br><br>
+                                В преддверии больших праздников, чтобы получить красивые и свежие цветы вовремя рекомендуется заранее оформлять заказ. Ярких и неожиданных вам моментов!</span>
+                        </span>
+                    </div>
+                    <div class="textblock">
+                        <h1>Пункты самовывоза</h1>
+                        <div class="grid-span-pickup">
+                            <span class="gray-bg green-text">м. Площадь Ильича или Римская, Гжельский переулок 19, стр. 3</span>
+                            <span class="gray-bg green-text">м. Братиславская, ул. Братиславская 26</span>
+                            <span class="gray-bg green-text">м. Варшавская, Чонгарский бульвар 10, корп. 1</span>
+                            <span class="gray-bg green-text">м. Красносельская, Краснопрудная 22-24</span>
+                            <span class="gray-bg green-text">м. Каширская, Каширское шоссе 26, корп.3</span>
+                            <span class="gray-bg green-text">м. Дмитровская, ул. Бутырская 86б</span>
+                            <span class="gray-bg green-text">м. Черкизовская, Б.Черкизовская 93, стр. 1</span>
+                            <span class="gray-bg green-text">м. Пролетарская, ул. Марксистская 38</span>
+                            <span class="gray-bg green-text">м. Новогиреево, Свободный проспект 20</span>
+                            <span class="gray-bg green-text">м. Профсоюзная, Нахимовский проспект 44</span>
+                            <span class="gray-bg green-text">м. Академическая, ул. Дмитрия Ульянова, д. 14, корп. 1</span>
+                            <span class="gray-bg green-text">м. Нахимовский проспект, Москворецкий рынок, Болотниковская 12 тел. 8 495 532-49-33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+</html>

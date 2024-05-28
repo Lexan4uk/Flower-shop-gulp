@@ -1,0 +1,14 @@
+.payments {
+    li {
+        margin-bottom: 15px;
+
+        &::before {
+            content: "— ";
+            font-weight: bold;
+        }
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+}
