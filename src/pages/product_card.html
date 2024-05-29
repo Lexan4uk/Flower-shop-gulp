@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+    "title": "Карточка товара"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main class="product-card">
+        <div class="product-card-block block-padding">
+            @@include( 'html/custom_pieces/paths_block.html',
+            {
+            "data": [
+            {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/hehe"},
+            {"name": "Букеты&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/haha"},
+            {"name": "«Тутти фрутти»", "path": ""}]
+            })
+            <div class="product-card-info">
+                <div class="swiper-holder">
+                    <div class="product-card-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <img src="/images/product_card/product-card-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <img src="/images/product_card/product-card-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <img src="/images/product_card/product-card-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <img src="/images/product_card/product-card-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <img src="/images/product_card/product-card-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <img src="/images/product_card/product-card-img-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-swiper-thumbnail-holder">
+                        <div class="swiper-button-prev">
+
+                        </div>
+                        <div class="product-card-swiper-thumbnail">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-card">
+                                        <img src="/images/product_card/product-card-img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-card">
+                                        <img src="/images/product_card/product-card-img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-card">
+                                        <img src="/images/product_card/product-card-img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-card">
+                                        <img src="/images/product_card/product-card-img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-card">
+                                        <img src="/images/product_card/product-card-img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-card">
+                                        <img src="/images/product_card/product-card-img-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-text">
+                    <div class="top-text">
+                        <span class="title">
+                            «Тутти фрутти»
+                        </span>
+                        <div class="price-block">
+                            <div class="green-price">
+                                1 600 ₽
+                            </div>
+                            <div class="gray-price">
+                                2 800 ₽
+                            </div>
+                            <div class="sale-label">
+                                @@include('html/custom_pieces/card/infoLabel.html', {
+                                "LabelImg": "/images/card/award.svg",
+                                "LabelColor": "#FF5555",
+                                "LabelText": "АКЦИЯ"
+                                })
+                            </div>
+                        </div>
+                        <div class="interaction-block">
+                            <div class="counter">
+                                <button class="left counter">-</button>
+                                <input class="counter" type="number" value="1">
+                                <button class="right counter">+</button>
+                            </div>
+                            @@include('html/custom_pieces/customised_button.html', {
+                            "type": "button",
+                            "path": "",
+                            "bgcolor": "#4BB45E",
+                            "borderColor": "#4BB45E",
+                            "textColor": "#FFFFFF",
+                            "text": "В корзину",
+                            "additional" : "border-radius: 5px; padding: 0px 20px;"
+                            })
+                            <img class="heart" src="/images/product_card/heart.svg" alt="" height="30" width="30">
+                        </div>
+                    </div>
+                    <div class="buttons-block infoblock">
+                        @@include('html/custom_pieces/customised_button.html', {
+                        "type": "button",
+                        "path": "",
+                        "bgcolor": "#4BB45E1A",
+                        "borderColor": "white",
+                        "textColor": "#4BB45E",
+                        "text": "Купить в один клик",
+                        "additional" : "border-radius: 5px; padding: 8px; font-family: 'Roboto'; border: none;"
+                        })
+                        @@include('html/custom_pieces/customised_button.html', {
+                        "type": "button",
+                        "path": "",
+                        "bgcolor": "#4BB45E1A",
+                        "borderColor": "white",
+                        "textColor": "#4BB45E",
+                        "text": "Отложить до вечера",
+                        "additional" : "border-radius: 5px; padding: 8px; font-family: 'Roboto'; border: none;"
+                        })
+                        @@include('html/custom_pieces/customised_button.html', {
+                        "type": "button",
+                        "path": "",
+                        "bgcolor": "#4BB45E1A",
+                        "borderColor": "white",
+                        "textColor": "#4BB45E",
+                        "text": "Отложить до завтра",
+                        "additional" : "border-radius: 5px; padding: 8px; font-family: 'Roboto'; border: none;"
+                        })
+                    </div>
+                    <div class="infoblock text-infoblock">
+                        <span class="infoblock-title">Состав</span>
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div>Роза</div>
+                            <div>3 шт. (50 см.)</div>
+                        </div>
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div>Хризантема кустовая</div>
+                            <div>4 шт.</div>
+                        </div>
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div>Лилия Азиатика</div>
+                            <div>1 шт.</div>
+                        </div>
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div>Роза</div>
+                            <div>3 шт. (50 см.)</div>
+                        </div>
+                        <div class="infoblock-text">Хризантема кустовая - 4 шт.</div>
+                        <div class="infoblock-text">Лилия Азиатика - 1 шт.</div>
+                    </div>
+                    <div class="infoblock text-infoblock">
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div><span class="infoblock-title">Размер</span></div>
+                            <div>30х25х30 см</div>
+                        </div>
+                    </div>
+                    <div class="infoblock text-infoblock">
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div><span class="infoblock-title">Доставка</span></div>
+                            <div>Бесплатно</div>
+                        </div>
+                    </div>
+                    <div class="infoblock text-infoblock">
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div><span class="infoblock-title">Букет упакован с водой</span><br>Это входит в стоимость
+                            </div>
+                            <div><a href="/"><img src="/images/product_card/question-circle.svg" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="infoblock text-infoblock">
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div><span class="infoblock-title">Как оформить заказ?</span></div>
+                            <div><a href="/"><img src="/images/product_card/question-circle.svg" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="infoblock text-infoblock">
+                        <div class="infoblock-2blocks infoblock-text">
+                            <div><span class="infoblock-title">Cпособы оплаты</span></div>
+                            <div><a href="/payments.html">
+                                    <div class="payments-holder"><img src="/images/product_card/money-bill-wave-alt.svg" alt="">Наличными</div>
+                                </a></div>
+                            <div><a href="/payments.html">
+                                    <div class="payments-holder"><img src="/images/product_card/credit-card.svg" alt="">Картой</div>
+                                </a></div>
+                            <div><a href="/payments.html">
+                                    <div class="payments-holder"><img src="/images/product_card/university.svg" alt="">Р/С</div>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendations">
+                <div class="title">
+                    Вам может понравиться
+                </div>
+                <div class="recomendation-cards-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                            "image": "/images/catalog/catalog-img-1-1.png",
+                            "price": "1 600 ₽",
+                            "description": "Минибукет 1600-6",
+                            "infoLabel": true,
+                            "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                            "sale": false,
+                            "newprice":"",
+                            "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                            "image": "/images/catalog/catalog-img-1-2.png",
+                            "price": "99 ₽",
+                            "description": "Нобилис",
+                            "infoLabel": false,
+                            "infoLabelData" : "",
+                            "sale": false,
+                            "newprice":"",
+                            "composition": "1 цветочек"
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                            "image": "/images/catalog/catalog-img-1-3.png",
+                            "price": "6 600 ₽",
+                            "description": "Роза Freedom 51 шт.",
+                            "infoLabel": true,
+                            "infoLabelData" : {"color": "#FF5555", "img": "/images/card/award.svg", "text": "АКЦИЯ"},
+                            "sale":true,
+                            "newprice":"5 900 ₽",
+                            "composition": "Куча розовых цветов"
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/custom_pieces/card/card.html', {
+                            "image": "/images/catalog/catalog-img-1-7.png",
+                            "price": "1 600 ₽",
+                            "description": "Минибукет 1400-2",
+                            "infoLabel": true,
+                            "infoLabelData" : {"color": "#FF5555", "img": "/images/card/award.svg", "text": "АКЦИЯ"},
+                            "sale":true,
+                            "newprice":"1 400 ₽",
+                            "composition": "Несколько белых роз, несколько красных роз"
+                            })
+                        </div>
+                    </div>
+                </div>
+                @@include('html/custom_pieces/customised_button.html', {
+                    "type": "hyperlink",
+                    "path": "/",
+                    "bgcolor": "linear-gradient(90deg, #3CB950 0%, #13DD33 100%);",
+                    "borderColor": "#fff",
+                    "textColor": "#fff",
+                    "text": "ПЕРЕЙТИ В КАТАЛОГ",
+                    "additional" : "transform: none;"
+                })
+            </div>
+            <div class="why-we">
+                <div class="title">
+                    Вам может понравиться
+                </div>
+                <div class="advantages">
+                    <div class="advantage">
+                        <img src="/images/product_card/bus.png" alt="">
+                        Доставим<br>в срок
+                    </div>
+                    <div class="advantage">
+                        <img src="/images/product_card/flower.png" alt="">
+                        Цветы простоят<br> от 6 дней
+                    </div>
+                    <div class="advantage">
+                        <img src="/images/product_card/procent.png" alt="">
+                        Возвращаем до<br> 15% бонусами
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+
+</html>

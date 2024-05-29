@@ -77,5 +77,24 @@ window.addEventListener('DOMContentLoaded', () => {
     const personnel_swiper = new Swiper('.personnel-swiper', {
     });
   }
+  const product_card_swiper = new Swiper('.product-card-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    thumbs: {
+      swiper: {
+        el: ".product-card-swiper-thumbnail",
+        slidesPerView: 4,
+        loop: true,
+        navigation: {
+          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next'
+        }
+      }
+    }
+  });
+  const recomendation_cards_swiper = new Swiper('.recomendation-cards-swiper', {
+    slidesPerView: 4,
+    
+  });
   
 });

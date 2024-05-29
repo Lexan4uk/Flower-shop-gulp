@@ -1,0 +1,275 @@
+.product-card {
+    .product-card-block {
+        padding-bottom: 60px;
+        .product-card-info {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 60px;
+
+            .swiper-holder {
+                position: relative;
+                width: 50%;
+
+                .product-card-swiper {
+                    overflow: hidden;
+
+                    .swiper-slide {
+                        height: 100%;
+                    }
+
+                    .swiper-card {
+                        text-align: center;
+                        overflow: hidden;
+
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .product-card-swiper-thumbnail-holder {
+                    position: relative;
+
+                    .product-card-swiper-thumbnail {
+                        overflow: hidden;
+                        margin-left: 45px;
+                        margin-right: 45px;
+
+                        .swiper-card {
+                            height: inherit;
+                            width: inherit;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+
+                        }
+
+                        .swiper-slide-thumb-active {
+                            img {
+                                border: 1px solid #4BB45E;
+                                border-radius: 8px;
+                            }
+
+                        }
+                    }
+
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        color: #4BB45E;
+                        opacity: 42%;
+                    }
+
+                }
+
+            }
+
+            .product-card-text {
+                max-width: 445px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Rubik';
+
+                .top-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding-bottom: 20px;
+
+                    .title {
+                        font-family: 'Cormorant Garamond' !important;
+                        font-size: 38px;
+                        font-weight: 700;
+                    }
+
+                    .price-block {
+                        display: flex;
+                        align-items: flex-end;
+
+                        .green-price {
+                            font-size: 42px;
+                            font-weight: 400;
+                            color: #4BB45E;
+                        }
+
+                        .gray-price {
+                            font-size: 26px;
+                            font-weight: 300;
+                            color: #C0C0C0;
+                            height: fit-content;
+                            text-decoration: line-through;
+                        }
+
+                        .sale-label {
+                            margin-left: auto;
+
+                            .outer-border {
+                                position: relative;
+                                top: 0;
+                                right: 0;
+                                transform: none;
+                            }
+                        }
+                    }
+
+                    .interaction-block {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 410px;
+                        width: 100%;
+
+                        .counter {
+                            display: flex;
+
+                            button {
+                                background-color: #ffffff00;
+                                border: 1px solid rgba(68, 68, 68, 0.1);
+                                color: #4BB45E;
+                                font-size: 27px;
+                            }
+
+                            .left {
+                                border-radius: 5px 0px 0px 5px
+                            }
+
+                            .right {
+                                border-radius: 0px 5px 5px 0px
+                            }
+
+                            input {
+                                font-weight: 300;
+                                width: 35px;
+                                text-align: center;
+                                border-left: 0px;
+                                border-right: 0px;
+                                border-top: 1px solid rgba(68, 68, 68, 0.1);
+                                border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+
+                        }
+
+                        .heart {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .buttons-block {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 30px
+                }
+
+                .text-infoblock {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .infoblock {
+                    border-top: 1px solid rgba(68, 68, 68, 0.1);
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    img {
+                        cursor: pointer;
+                    }
+                    a {
+                        text-decoration: none;
+                    }
+                    .payments-holder {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .infoblock-title {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                    .infoblock-text {
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+
+                    .infoblock-2blocks {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        div {
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+        .recommendations {
+            text-align: center;
+            .title {
+                font-family: 'Cormorant Garamond';
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 40px;
+            }
+            .recomendation-cards-swiper {
+                position: relative;
+                margin-bottom: 90px;
+                .card-holder {
+                    .card {
+                        width: auto;
+                        height: auto;
+                        .image-holder {
+                            .image {
+                                img {
+                                    max-width: 200px;
+                                    max-height: 200px;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .additional-info {
+                            display: none;
+                            opacity: 0;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        .why-we {
+            margin-top: 60px;
+            text-align: center;
+            .title {
+                font-family: 'Cormorant Garamond';
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 40px;
+            }
+            .advantages {
+                border: 1px solid #0000001A;
+                border-radius: 10px;
+                padding: 30px;
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Montserrat';
+                font-size: 22px;
+                font-weight: 400;
+                .advantage {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px
+                }
+            }
+
+        }
+    }
+}
