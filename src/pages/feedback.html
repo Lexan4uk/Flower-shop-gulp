@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+    "title": "Отзывы"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main class="feedback">
+        <div class="information-block block-padding">
+            @@include( 'html/custom_pieces/paths_block.html',{
+            "data": [
+            {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/index.html"},
+            {"name": "Отзывы", "path": "/haha"}
+            ]
+            })
+            <div class="grid-holder">
+                <div class="side-menu-holder">
+                    @@include( 'html/custom_pieces/side-menu.html', {
+                    "data": [
+                        {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "", "link": "/about.html"},
+                        {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": "", "link": "/payments.html"},
+                        {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": "", "link": "/delivery.html"},
+                        {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": "active", "link": "/feedback.html"},
+                        {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": "", "link": "/discont_cards.html"},
+                        {"text": "Видео", "img": "/images/side-menu/video.svg", "class": "", "link": "/video.html"},
+                        {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": "", "link": "/contact.html"},
+                    ]
+                    })
+                </div>
+                <div class="information-text">
+                    <div class="textblock feedback-textblock">
+                        <div class="big-text">
+                            CПОСОБЫ ОПЛАТЫ
+                        </div>
+                        <div class="feedback-button">
+                            @@include('html/custom_pieces/customised_button.html', {
+                                "type": "button",
+                                "path": "",
+                                "bgcolor": "#ffffff00",
+                                "borderColor": "#4BB45E",
+                                "textColor": "#4BB45E",
+                                "text": "ОСТАВИТЬ ОТЗЫВ",
+                                "additional" : ""
+                            })
+                        </div>
+                    </div>   
+                    <div class="textblock feedback-holder">
+                        <div class="feedback-line">
+                            <div class="feedback-message">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                            </div>
+                            <div class="feedback-card">
+                                @@include('html/custom_pieces/card/card.html', {
+                                    "image": "/images/main/flower1-1.png",
+                                    "price": "1 600 ₽",
+                                    "description": "Минибукет 1600-6",
+                                    "infoLabel": true,
+                                    "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                    "sale": false,
+                                    "newprice":"",
+                                    "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                })
+                            </div>
+                        </div>
+                        <div class="feedback-line">
+                            <div class="feedback-card">
+                                @@include('html/custom_pieces/card/card.html', {
+                                    "image": "/images/main/flower1-1.png",
+                                    "price": "1 600 ₽",
+                                    "description": "Минибукет 1600-6",
+                                    "infoLabel": true,
+                                    "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                    "sale": false,
+                                    "newprice":"",
+                                    "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                })
+                            </div>
+                            <div class="feedback-message">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                            </div>
+                        </div>
+                        <div class="feedback-line">
+                            <div class="feedback-message">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                            </div>
+                            <div class="feedback-card">
+                                @@include('html/custom_pieces/card/card.html', {
+                                    "image": "/images/main/flower1-1.png",
+                                    "price": "1 600 ₽",
+                                    "description": "Минибукет 1600-6",
+                                    "infoLabel": true,
+                                    "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                    "sale": false,
+                                    "newprice":"",
+                                    "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                })
+                            </div>
+                        </div>
+                        <div class="feedback-line">
+                            <div class="feedback-card">
+                                @@include('html/custom_pieces/card/card.html', {
+                                    "image": "/images/main/flower1-1.png",
+                                    "price": "1 600 ₽",
+                                    "description": "Минибукет 1600-6",
+                                    "infoLabel": true,
+                                    "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                    "sale": false,
+                                    "newprice":"",
+                                    "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                })
+                            </div>
+                            <div class="feedback-message">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                            </div>
+                        </div>
+                        <div class="feedback-line">
+                            <div class="feedback-message">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                            </div>
+                            <div class="feedback-card">
+                                @@include('html/custom_pieces/card/card.html', {
+                                    "image": "/images/main/flower1-1.png",
+                                    "price": "1 600 ₽",
+                                    "description": "Минибукет 1600-6",
+                                    "infoLabel": true,
+                                    "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                    "sale": false,
+                                    "newprice":"",
+                                    "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                })
+                            </div>
+                        </div>
+                        <div class="feedback-line">
+                            <div class="feedback-card">
+                                @@include('html/custom_pieces/card/card.html', {
+                                    "image": "/images/main/flower1-1.png",
+                                    "price": "1 600 ₽",
+                                    "description": "Минибукет 1600-6",
+                                    "infoLabel": true,
+                                    "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                    "sale": false,
+                                    "newprice":"",
+                                    "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                })
+                            </div>
+                            <div class="feedback-message">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                            </div>
+                        </div>
+                        <div class="feedback-line">
+                            <div class="feedback-message">
+                                @@include('html/custom_pieces/feedback-slider-slide.html', {
+                                    "name": "Игорь",
+                                    "time": "26.12.2020 - 17:34",
+                                    "place": "м. Текстильщики",
+                                    "rate": 5,
+                                    "text": "Впечатление — море счастья у всех. Доставка в срок, цветы красивые. Отдельное спасибо оператору и курьеру за вежливость."
+                                })
+                            </div>
+                            <div class="feedback-card">
+                                @@include('html/custom_pieces/card/card.html', {
+                                    "image": "/images/main/flower1-1.png",
+                                    "price": "1 600 ₽",
+                                    "description": "Минибукет 1600-6",
+                                    "infoLabel": true,
+                                    "infoLabelData" : {"color": "#4BB45E", "img": "/images/card/seedling.svg", "text": "НОВИНКА"},
+                                    "sale": false,
+                                    "newprice":"",
+                                    "composition": "1 розовый цветок, 1 белый цветок, 1 желтый цветок, много-много других"
+                                })
+                            </div>
+                        </div>
+                    </div>   
+                    @@include('html/custom_pieces/customised_button.html', {
+                        "type": "hyperlink",
+                        "path": "/",
+                        "bgcolor": "linear-gradient(90deg, #3CB950 0%, #13DD33 100%);",
+                        "borderColor": "#fff",
+                        "textColor": "#fff",
+                        "text": "ОСТАВИТЬ ОТЗЫВ",
+                        "additional" : "transform: none;"
+                    })
+                    <div class="textblock pagination">
+                        <button class="unactive">Назад</button>
+                        <div class="page">
+                            <a href="/" class="active-a">1</a>
+                            <a href="/">2</a>
+                            <a href="/">3</a>
+                            <a href="/">4</a>
+                            <a href="/">5</a>
+                            <a href="/">6</a>
+                            <a href="/">7</a>
+                            <a href="/">8</a>
+                        </div>
+                        <button class="active">Вперёд</button>
+                    </div>
+                                
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+
+</html>

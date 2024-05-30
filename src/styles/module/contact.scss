@@ -1,0 +1,54 @@
+.contact {
+    .textblock {
+        .big-text {
+            margin-bottom: 0px !important;
+        }
+    }
+    .map {
+        width: 100%;
+        height: 50vh;
+    }
+    .grid-span-pickup {
+        margin-top: 15px;
+        display: grid;
+        row-gap: 15px;
+
+        .gray-bg {
+            background-color: #EDF8EF;
+        }
+        div {
+            border-radius: 40px;
+            padding: 10px 20px 10px 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .green-text {
+                color: #4BB45E;
+                font-weight: 400 !important;
+            }
+            .number {
+                color: #111;
+                margin-left: 10px;
+                text-align: right;
+                font-weight: 400 !important;
+            }
+
+            
+        }
+    }
+}
+
+@include media-down($bp3) {
+    .contact {
+
+        .grid-span-pickup {
+            row-gap: 5px;
+
+            div {
+                border-radius: 20px;
+                padding: 5px 10px 5px 10px;
+                flex-direction: column;
+            }
+        }
+    }
+}

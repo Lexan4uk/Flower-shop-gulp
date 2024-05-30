@@ -65,7 +65,6 @@ export const browserSync = () => {
     browser: "chrome",
     server: {
       baseDir: "./" + projectFolder + "/",
-      index: "about.html" // Указываем путь к файлу catalog.html
     },
   });
 };

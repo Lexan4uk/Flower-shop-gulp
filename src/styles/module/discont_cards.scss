@@ -1,0 +1,20 @@
+.discont-cards {
+    .discont-card-holder {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
+@include media-down($bp3) {
+    .discont-cards {
+        .discont-card-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

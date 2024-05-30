@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+        "title": "Контакты"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main class="contact">
+        <div class="information-block block-padding">
+            @@include( 'html/custom_pieces/paths_block.html',{
+                "data": [
+                    {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/index.html"},
+                    {"name": "Контакты", "path": "/haha"}
+                ]
+            })
+            <div class="grid-holder">
+                <div class="side-menu-holder">
+                    @@include( 'html/custom_pieces/side-menu.html', {
+                        "data": [
+                            {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "", "link": "/about.html"},
+                            {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": "", "link": "/payments.html"},
+                            {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": "", "link": "/delivery.html"},
+                            {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": "", "link": "/feedback.html"},
+                            {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": "", "link": "/discont_cards.html"},
+                            {"text": "Видео", "img": "/images/side-menu/video.svg", "class": "", "link": "/video.html"},
+                            {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": "active", "link": "/contact.html"},
+                        ]
+                    })
+                </div>
+                <div class="information-text">
+                    <div class="textblock">
+                        <div class="big-text">
+                            КОНТАКТЫ
+                        </div>
+                    </div>
+                    <div class="textblock">
+                        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6648f984ac12cdbb710ae354ca8502d5cf81adc07be870f29eb30cb82af73706&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+                    </div>
+                    <div class="textblock">
+                        <span class="bold">Адреса и телефоны цветочных центров:</span>
+                        <div class="grid-span-pickup">
+                            <div class="gray-bg"><span class="green-text">м. Площадь Ильича или Римская, Гжельский переулок 19, стр. 3</span><span class="number">+7 (495) 978-54-54</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Братиславская, ул. Братиславская 26</span><span class="number">+7 (495) 346-99-10</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Белорусская, ул. Большая Грузинская 62</span><span class="number">+7 (499) 254-40-44<br>(Круглосуточно)</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Варшавская, Чонгарский бульвар 10, корп. 1</span><span class="number">+7 (499) 619-58-36</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Красносельская, Краснопрудная 22-24</span><span class="number">+7 (495) 641-81-60</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Каширская, Каширское шоссе 26, корп.3</span><span class="number">+7 (495) 641-81-60</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Дмитровская, ул. Бутырская 86б</span><span class="number">+7 (495) 610-62-53</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Черкизовская, Б.Черкизовская 93, стр. 1</span><span class="number">+7 (499) 161-26-53<br>время работы: с 8-00 до 21-00</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Пролетарская, ул. Марксистская 38</span><span class="number">+7 (495) 912-08-28</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Новогиреево, Свободный проспект 20</span><span class="number">+7 (499) 343-70-76</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Профсоюзная, Нахимовский проспект 44</span><span class="number">+7 (499) 125-27-58</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Кантемировская, Пролетарский проспект 27</span><span class="number">+7 (495) 325-00-01</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Щёлковская, улица Уральская 6, корп.1</span><span class="number">+7 (495) 770-95-00</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Текстильщики, Волгоградский проспект 59</span><span class="number">+7 (499) 177-77-07</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Полянка, ул. Большая Полянка 28, корп. 1</span><span class="number">+7 (499) 230-10-20</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Академическая, ул. Дмитрия Ульянова, д. 14, корп. 1</span><span class="number">+7 (495) 532-49-33</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Нахимовский проспект, Москворецкий рынок, Болотниковская 12</span><span class="number">+7 (926) 658-63-21<br>(Круглосуточно)</span></div>
+                            <div class="gray-bg"><span class="green-text">м. Университет, проспект Вернадского 11/19,</span><span class="number">+7 (495) 930-50-50<br>(Круглосуточно)</span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+</html>

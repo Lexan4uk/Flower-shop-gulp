@@ -1,6 +1,7 @@
 .product-card {
     .product-card-block {
         padding-bottom: 60px;
+
         .product-card-info {
             display: flex;
             justify-content: space-between;
@@ -13,6 +14,7 @@
 
                 .product-card-swiper {
                     overflow: hidden;
+                    
 
                     .swiper-slide {
                         height: 100%;
@@ -20,7 +22,6 @@
 
                     .swiper-card {
                         text-align: center;
-                        overflow: hidden;
 
                         img {
                             max-width: 100%;
@@ -178,17 +179,21 @@
                     border-top: 1px solid rgba(68, 68, 68, 0.1);
                     padding-top: 20px;
                     padding-bottom: 20px;
+
                     img {
                         cursor: pointer;
                     }
+
                     a {
                         text-decoration: none;
                     }
+
                     .payments-holder {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                     }
+
                     .infoblock-title {
                         font-size: 20px;
                         font-weight: 400;
@@ -197,12 +202,16 @@
                     .infoblock-text {
                         font-size: 18px;
                         font-weight: 300;
+                        a {
+                            margin-left: 10px;
+                        }
                     }
 
                     .infoblock-2blocks {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
                         div {
                             width: fit-content;
                         }
@@ -210,21 +219,28 @@
                 }
             }
         }
+
         .recommendations {
             text-align: center;
+
             .title {
                 font-family: 'Cormorant Garamond';
                 font-size: 36px;
                 font-weight: 700;
                 margin-bottom: 40px;
             }
+
             .recomendation-cards-swiper {
                 position: relative;
                 margin-bottom: 90px;
+                overflow: hidden;
+                padding: 10px;
                 .card-holder {
                     .card {
                         width: auto;
                         height: auto;
+                        padding-bottom: 10px;
+
                         .image-holder {
                             .image {
                                 img {
@@ -234,6 +250,7 @@
                             }
                         }
                     }
+
                     &:hover {
                         .additional-info {
                             display: none;
@@ -241,35 +258,161 @@
                         }
                     }
                 }
-                
+
             }
-            
+
         }
+
         .why-we {
             margin-top: 60px;
             text-align: center;
+
             .title {
                 font-family: 'Cormorant Garamond';
                 font-size: 36px;
                 font-weight: 700;
                 margin-bottom: 40px;
             }
+
             .advantages {
                 border: 1px solid #0000001A;
                 border-radius: 10px;
                 padding: 30px;
                 display: flex;
                 justify-content: space-between;
-                font-family: 'Montserrat';
-                font-size: 22px;
-                font-weight: 400;
+
                 .advantage {
                     display: flex;
                     align-items: center;
-                    gap: 20px
+                    gap: 20px;
+                    font-family: 'Montserrat';
+                    font-size: 22px;
+                    font-weight: 400;
                 }
             }
 
         }
+    }
+}
+
+@include media-down($bp3) {
+    .product-card {
+        .product-card-block {
+            padding-bottom: 30px;
+
+            .product-card-info {
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 15px;
+                padding-bottom: 30px;
+
+                .swiper-holder {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        color: #4BB45E;
+                        opacity: 42%;
+                    }
+
+                }
+
+                .product-card-text {
+
+                    .top-text {
+
+                        .title {
+                            font-family: 'Cormorant Garamond' !important;
+                            font-size: 28px;
+                            font-weight: 700;
+                        }
+
+                        .price-block {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 10px;
+
+                            .green-price {
+                                font-size: 32px;
+
+                            }
+
+                            .gray-price {
+                                font-size: 20px;
+
+                            }
+
+                            .sale-label {
+                                margin-left: 0;
+
+                            }
+                        }
+
+                        .interaction-block {
+
+                            .heart {
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+
+                    .buttons-block {
+                        gap: 10px
+                    }
+
+
+                    .infoblock {
+                        .payment-ways-block {
+                            flex-direction: column;
+                            gap: 10px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+
+
+            .recommendations {
+
+                .title {
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+
+                .recomendation-cards-swiper {
+                    margin-bottom: 20px;
+
+                }
+
+            }
+
+            .why-we {
+                margin-top: 30px;
+                text-align: center;
+
+                .title {
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+
+                .advantages {
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .advantage {
+                        gap: 10px;
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+
+
     }
 }

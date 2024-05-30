@@ -82,6 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loop: true,
     thumbs: {
       swiper: {
+        spaceBetween: 5,
         el: ".product-card-swiper-thumbnail",
         slidesPerView: 4,
         loop: true,
@@ -93,8 +94,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
   const recomendation_cards_swiper = new Swiper('.recomendation-cards-swiper', {
-    slidesPerView: 4,
-    
+    breakpoints: {
+      
+      950: {
+          slidesPerView: 4
+      },
+      0: {
+          slidesPerView: 1
+      }
+    }
   });
-  
+
 });

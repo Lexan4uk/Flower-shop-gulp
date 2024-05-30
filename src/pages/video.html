@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+    "title": "Видео"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main class="video">
+        <div class="information-block block-padding">
+            @@include( 'html/custom_pieces/paths_block.html',{
+            "data": [
+            {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/index.html"},
+            {"name": "Видео", "path": "/haha"}
+            ]
+            })
+            <div class="grid-holder">
+                <div class="side-menu-holder">
+                    @@include( 'html/custom_pieces/side-menu.html', {
+                    "data": [
+                        {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "", "link": "/about.html"},
+                        {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": "", "link": "/payments.html"},
+                        {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": "", "link": "/delivery.html"},
+                        {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": "", "link": "/feedback.html"},
+                        {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": "", "link": "/discont_cards.html"},
+                        {"text": "Видео", "img": "/images/side-menu/video.svg", "class": "active", "link": "/video.html"},
+                        {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": "", "link": "/contact.html"},
+                    ]
+                    })
+                </div>
+                <div class="information-text">
+                    <div class="textblock">
+                        <div class="big-text">
+                            ВИДЕО
+                        </div>
+                        <span class="gigant-text">
+                            Что тут будет?
+                        </span>
+                        <div>
+                            <span> Служба доставки компании «ФлораМаркт» осуществляет доставку цветов и букетов в любое удобное для Вас время 365 дней в году, мы работаем без выходных и праздников. Мы готовы нести красоту и радость каждому, кто обратится к нам.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+
+</html>

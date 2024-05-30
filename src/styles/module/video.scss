@@ -1,0 +1,21 @@
+.video {
+    .gigant-text {
+        color: #111;
+        display: block;
+        font-weight: 300 !important;
+        font-size: 81px !important;
+        line-height: 81px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@include media-down($bp1) {
+    .video {
+        .gigant-text {
+            font-size: 50px !important;
+            line-height: 50px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+}

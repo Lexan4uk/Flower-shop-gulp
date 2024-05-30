@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+    "title": "Дисконтные карты"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/header.html')
+
+    <main class="discont-cards">
+        <div class="information-block block-padding">
+            @@include( 'html/custom_pieces/paths_block.html',{
+            "data": [
+            {"name": "Главная&nbsp;&nbsp;>&nbsp;&nbsp;", "path": "/index.html"},
+            {"name": "Дисконтные карты", "path": "/haha"}
+            ]
+            })
+            <div class="grid-holder">
+                <div class="side-menu-holder">
+                    @@include( 'html/custom_pieces/side-menu.html', {
+                    "data": [
+                        {"text": "О компании", "img": "/images/side-menu/about.svg", "class": "", "link": "/about.html"},
+                        {"text": "Способы оплаты", "img": "/images/side-menu/pay.svg", "class": "", "link": "/payments.html"},
+                        {"text": "Доставка", "img": "/images/side-menu/delivery.svg", "class": "", "link": "/delivery.html"},
+                        {"text": "Отзывы", "img": "/images/side-menu/feedback.svg", "class": "", "link": "/feedback.html"},
+                        {"text": "Дисконтные карты", "img": "/images/side-menu/cards.svg", "class": "active", "link": "/discont_cards.html"},
+                        {"text": "Видео", "img": "/images/side-menu/video.svg", "class": "", "link": "/video.html"},
+                        {"text": "Контакты", "img": "/images/side-menu/contact.svg", "class": "", "link": "/contact.html"},
+                    ]
+                    })
+                </div>
+                <div class="information-text">
+                    <div class="textblock">
+                        <div class="big-text">
+                            ДИСКОНТНЫЕ КАРТЫ
+                        </div>
+                        <div>
+                            <h1>Информация о дисконтных картах</h1>
+                            <span> Магазин «ФлораМаркт» предлагает своим покупателям<span class="bold"> дисконтные карты</span>. При покупке на сумму от
+                            <span class="bold">1500 рублей</span> вы получаете дисконтную карту с 5% скидкой на все товары. При покупке свыше
+                            <span class="bold">5000 рублей</span> вы получаете дисконтную карту с 10% скидкой на все товары.</span>
+                        </div>
+                    </div>
+                    <div class="textblock discont-card-holder">
+                        <img src="/images/discont_cards/discont-card-1.png" alt="">
+                        <img src="/images/discont_cards/discont-card-2.png" alt="">
+                    </div>
+                    <div class="textblock">
+                        <span>На товары участвующие в акции скидки не распространяются.<br>
+                            Карта дает право на получении скидки в магазинах Флорамаркт.<br>
+                            Внимание! Скидок по карте при заказе в интернет-магазине нет!</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+
+</html>
